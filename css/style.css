@@ -1,0 +1,409 @@
+/**********
+    * Formatação padrao do sistema 
+    *
+*****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sem serifa;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+
+
+
+
+
+
+/**********
+    * Formatação do content
+    *
+*****/
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/**********
+    * Formatação do .menu
+    *
+*****/
+.menu {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: #007BFF;
+}
+
+.menu .center {
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo {
+    display: block;
+    width: 50px;
+    height: 40px;
+}
+
+.menu nav ul {
+    display: flex;
+    margin-left: 40px;
+}
+
+.menu nav li a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+
+
+
+/**********
+    * Formatação do .menuMobile
+    *
+*****/
+.content .menuMobile {
+    display: none;
+}
+
+.menuMobile {
+    width: 100%;
+    background-color: #007BFF;
+}
+
+.menuMobile .hamburgue {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.menuMobile .hamburgue img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 30px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.menuMobile .center {
+    text-align: center;
+    transition: 2s;
+    visibility: hidden;
+    height: 0;
+    transition: 2s;
+    overflow: hidden;
+}
+
+.menuMobile .center.active {
+    height: 150px;
+    visibility: visible;
+    margin: 20px 0;
+}
+
+.menuMobile ul li a {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.15);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.menuMobile ul li a:hover {
+    background-color: rgba(44, 44, 44, 0.4);
+}
+
+
+
+
+
+/**********
+    * Formatação do .corpoPai .corpo
+    *
+*****/
+.corpoPai {
+    display: flex;
+    align-items: center;
+}
+
+
+/** formataçao do .corpo **/
+.corpo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "titulo"
+        "registroPrimary"
+        "registroSecond"
+    ;
+}
+
+
+/** formataçao do .titulo **/
+.titulo {
+    grid-area: titulo;
+    background-color: #007BFF;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.corpo .titulo h1 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+/** formataçao do registroPrimary **/
+.registroPrimary {
+    grid-area: registroPrimary;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.corpo .registroPrimary .item:nth-child(1),
+.corpo .registroPrimary .item:nth-child(2),
+.corpo .registroPrimary .item:nth-child(3) {
+    width: 15%;
+    height: 40px;
+}
+
+.corpo .registroPrimary .item:nth-child(4) {
+    width: 50%;
+    height: 40px;
+}
+
+.corpo .item select,
+.corpo .item input[type=text] {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: #007BFF;
+    font-size: 19px;
+    border: 2px solid #007BFF;
+    padding-left: 5px;
+}
+
+.corpo .item select:focus,
+.corpo .item input[type=text]:focus {
+    outline: 0;
+    box-shadow: 2px 2px 5px 0 #007BFF;
+}
+
+.corpo .item input[type=text]::placeholder {
+    color: #007BFF;
+}
+
+
+/** formataçao do .registroSecond **/
+.registroSecond {
+    grid-area: registroSecond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corpo .registroSecond .item:nth-child(1) {
+    width: 70%;
+    height: 40px;
+}
+
+.corpo .registroSecond .item:nth-child(2) {
+    width: 15%;
+    height: 40px;
+}
+
+.corpo .registroSecond .item:nth-child(3) {
+    width: 13%;
+    height: 50px;
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.corpo .registroSecond .item:nth-child(3):hover {
+    background-color: #ffffff;
+    border: 2px solid #097aeb;
+    color: #007BFF;
+    font-weight: 700;
+    transition: .2s;
+}
+
+
+
+
+
+/**********
+    * Formatação do .consulta
+    *
+*****/
+.consulta {
+    width: 100%;
+    max-width: 1280px;
+    margin: 50px auto 230px auto;
+    padding: 0 2%;
+}
+
+.consulta table {
+    width: 100%;
+}
+
+
+/** thead titulo **/
+.consulta table th {
+    background-color: #007BFF;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+/** tbody conteudo **/
+.consulta table tr {
+    border-collapse: collapse;
+}
+
+.consulta table td {
+    padding: 10px 0;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #007BFF;
+    color: #007BFF;
+}
+
+
+.consulta .btn {
+    padding: 8px 20px;
+    font-size: 21px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+}
+
+.consulta .btn:hover {
+    box-shadow: 2px 2px 4px 2px red;
+}
+
+
+
+
+
+
+
+
+/**********
+    * Formatação do .validar
+    *
+*****/
+.validar {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 3px 0 #ffffff;
+}
+
+.validar .validarItem {
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 3px 0 #ffffff;
+}
+
+.validar .validarItem:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    border-radius: 20px 20px 0 0;
+}
+
+.validar .validarItem:nth-child(1) .fechar,
+.validar .validarItem:nth-child(3) .fechar {
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 0 #ffffff;
+    cursor: pointer;
+}
+
+.validar .validarItem:nth-child(2) {
+    padding: 10px 2%;
+}
+
+.validar .validarItem:nth-child(3) {
+    display: flex;
+    justify-content: end;
+    padding: 10px 2%;
+    border-radius: 0 0 20px 20px;
+}
+
+.validar .validarItem:nth-child(3) .fechar  {
+    padding: 12px 35px;
+}
+
+
+
+
+
+
+
+
+/** formataçao do .rodape **/
+.rodape {
+    width: 100%;
+    height: 10vh;
+    background-color: #007BFF;
+    display: flex;
+    align-items: center;
+}
+
+.rodape p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 19px;
+}
+

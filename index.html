@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+
+        <!-- Meta tags para SEO -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="Projeto Orçamento Pessoal" />
+        <meta name="keywords" content="HTML, CSS, JS" />
+        <meta name="author" content="Marcos Vinicio Araujo Almeida" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- link google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <!-- link style.css -->
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+        <!-- link styleMedia.css -->
+        <link rel="stylesheet" href="./css/styleMedia.css" type="text/css" />
+
+        <!-- link script.js -->
+        <!-- <script src="./js/script.js"> </script> -->
+
+        <!-- link logo orcamento -->
+        <link rel="icon" href="./img/logo.png">
+
+        <title> Projeto Orçamento Pessoal </title>
+
+        <style>
+
+            .corpoPai {
+                height: 90vh;
+            }
+
+            @media (max-width: 760px) {
+
+                .corpoPai {
+                    height: 76.6vh;
+                }
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+         
+        <main class="content">
+
+        
+            <header class="menu">
+                <section class="center"> 
+
+                    <a href="index.html" class="logo"> <img src="./img/logo.png" alt="Orçamento Pessoal"> </a><!-- logo -->
+
+                    <nav>
+                        <ul>
+                            <li> <a href="index.html"> Cadastro </a> </li>
+                            <li> <a href="consulta.html"> Consulta </a> </li>
+                        </ul>
+                    </nav>
+
+                </section><!-- center -->
+            </header><!-- menu -->
+
+
+            <nav class="menuMobile">
+
+                <div class="hamburgue">
+                    <img id="hamburgue" src="img/hamburger.png" alt="Click">
+                </div><!-- hamburgue -->
+
+                <section class="center"> 
+                    <a href="index.html"> <img src="./img/logo.png" alt="Orçamento Pessoal"> </a><!-- logo -->
+
+                    <ul>
+                        <li> <a href="index.html"> Cadastro </a> </li>
+                        <li> <a href="consulta.html"> Consulta </a> </li>
+                    </ul>
+                </section><!-- center -->
+            </nav>
+
+
+            <section class="corpoPai">
+
+                <section class="corpo">
+
+                    <div class="titulo"> 
+                        <h1> Registro de nova despesa </h1>
+                    </div><!-- titulo -->
+
+                    
+                    <div class="registroPrimary">
+                        <div class="item">
+                            <select class="ano" id="ano">
+                                <option value=""> Ano </option>
+                                <option value="2016"> 2016 </option>
+                                <option value="2017"> 2017 </option>
+                                <option value="2018"> 2018 </option>
+                                <option value="2019"> 2019 </option>
+                                <option value="2020"> 2020 </option>
+                                <option value="2021"> 2021 </option>
+                                <option value="2022"> 2022 </option>
+                                <option value="2023"> 2023 </option>
+                            </select><!-- ano -->
+                        </div><!-- item -->
+
+
+
+
+                        <div class="item">
+                            <select class="mes"  id="mes">
+                                <option value=""> Mês </option>
+                                <option value="Janeiro"> Janeiro </option>
+                                <option value="Fevereiro"> Fevereiro </option>
+                                <option value="Março"> Março </option>
+                                <option value="Abriu"> Abriu </option>
+                                <option value="Maio"> Maio </option>
+                                <option value="Junho"> Junho </option>
+                                <option value="Julho"> Julho </option>
+                                <option value="Agosto"> Agosto </option>
+                                <option value="Setembro"> Setembro </option>
+                                <option value="Outubro"> Outubro </option>
+                                <option value="Novembro"> Novembro </option>
+                                <option value="Dezembro"> Dezembro </option>
+                            </select><!-- Mês -->
+                        </div><!-- item -->
+
+
+
+
+
+                        <div class="item">
+                            <input type="text" class="dia" name="dia" id="dia" placeholder="Dia" /><!-- dia -->
+                        </div><!-- item -->
+
+
+
+
+                        <div class="item ">
+                            <select class="tipo" id="tipo">
+                                <option value=""> Tipo </option>
+                                <option value="Alimentos"> Alimentos </option>
+                                <option value="Escola"> Escola</option>
+                                <option value="Faculdade"> Faculdade </option>
+                                <option value="Lazer"> Lazer </option>
+                                <option value="Casa"> Casa </option>
+                                <option value="Carro"> Carro </option>
+                                <option value="Diario"> Diario </option>
+                            </select><!-- tipo -->
+                        </div><!-- item -->
+                    
+                    </div><!-- registroPrimary -->
+            
+
+                    <div class="registroSecond"> 
+                        <div class="item descricao">
+                            <input type="text" name="descricao" id="descricao" placeholder="Descrição" /><!-- descricao -->
+                        </div><!-- item -->
+
+
+
+
+                        <div class="item valor">
+                            <input type="text" name="valor" id="valor" placeholder="Valor" /><!-- valor -->
+                        </div><!-- item -->
+
+
+
+
+                        <div class="item">
+                            <div class="enviar" name="enviar" id="enviar"> Enviar </div><!-- enviar -->
+                        </div><!-- item -->
+
+                    </div><!-- registroSecond -->
+
+                </section><!-- corpo -->
+
+            </section><!-- corpoPai -->
+
+
+            <section class="validar" id="validar">
+
+                <div class="validarItem">
+                    <h3></h3>
+                    <div class="fechar" id="fechar"> X </div><!-- fechar -->
+                </div><!-- validatItem -->
+
+                <div class="validarItem">
+                    <h3></h3>
+                </div><!-- validatItem -->
+
+                <div class="validarItem">
+                    <div class="fechar" id="fecharSecond"> voltar </div><!-- fechar -->
+                </div><!-- validatItem -->
+
+            </section><!-- validar -->
+
+
+            <footer class="rodape">
+                <section class="center">
+                    <p onClick="alert('clicado')"> Origamid © 2019 - 2023. Alguns direitos reservados. </p>
+                </section><!-- center -->
+            </footer><!-- rodape -->
+
+        </main><!-- content-->
+
+
+
+        <!-- link script.js -->
+        <script src="./js/script.js"> </script>
+
+
+        <script>
+            console.log('ola mundo')
+        </script>
+
+        <!-- link script.js -->
+        <script src="./js/scriptMenu.js"> </script>
+
+    </body>
+</html>

@@ -1,0 +1,106 @@
+/**********
+    * Formatação media scren and (max-width: 760px);
+    *
+*****/
+@media (max-width: 760px) {
+
+
+    /** Formatação .menu *****/
+    .menu {
+        display: none;
+    }
+
+
+
+    /** Formatação .menuMobile *****/
+    .content .menuMobile {
+        display: block;
+    }
+
+
+    .corpoPai {
+        height: 76.7vh;
+    }
+
+    .corpo .registroPrimary .item:nth-child(1),
+    .corpo .registroPrimary .item:nth-child(2),
+    .corpo .registroPrimary .item:nth-child(3) {
+        width: 19%;
+    }
+
+    .corpo .registroPrimary .item:nth-child(4) {
+        width: 40%;
+    }
+
+    .corpo .registroSecond .item:nth-child(1) {
+        width: 57%;
+    }
+    
+    .corpo .registroSecond .item:nth-child(2) {
+        width: 20%;
+    }
+    
+    .corpo .registroSecond .item:nth-child(3) {
+        width: 20%;
+        height: 40px;
+        font-size: 19px;
+    }
+
+
+    /** Formatação .validar *****/
+    .validar {
+        max-width: 600px;
+    }
+
+    .rodape {
+        height: 15vh;
+    }
+
+
+}
+
+
+
+/**********
+    * Formatação media scren and (max-width: 650px);
+    *
+*****/
+@media (max-width: 650px) {
+
+    /** Formatação .validar *****/
+    .validar {
+        max-width: 500px;
+    }
+
+
+}
+
+
+/**********
+    * Formatação media scren and (max-width: 554px);
+    *
+*****/
+@media (max-width: 554px) {
+
+    /** Formatação .validar *****/
+    .validar {
+        max-width: 400px;
+    }
+
+
+}
+
+
+/**********
+    * Formatação media scren and (max-width: 470px);
+    *
+*****/
+@media (max-width: 470px) {
+
+    /** Formatação .validar *****/
+    .validar {
+        right: -50px;
+        width: 400px;
+    }
+
+}
